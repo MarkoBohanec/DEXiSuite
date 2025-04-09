@@ -10,9 +10,9 @@ DEXi Suite is aimed at gradually replacing [DEXi Classic](https://dex.ijs.si/dex
 
 DEXi Suite consists of three software components:
 
-- [DexiLibrary](./DexiLibrary/README.MD): A common software library for developing and using DEXi models. Available as open-source code, and Java and .NET class libraries, dexijar.jar and DexiDLL.dll.
+- [DexiLibrary](./DexiLibrary/README.md): A common software library for developing and using DEXi models. Available as open-source code, and Java and .NET class libraries, dexijar.jar and DexiDLL.dll.
 
-- [DexiWin](./DexiWin/README.MD): A Microsoft Windows desktop program for developing and using DEX models. Essentially, it is a graphic user interface built upon DexiLibrary that supports:
+- [DexiWin](./DexiWin/README.md): A Microsoft Windows desktop program for developing and using DEX models. Essentially, it is a graphic user interface built upon DexiLibrary that supports:
 
   - Creation and editing of DEXi models and their components: attributes and their structure, value scales, and decision tables;
   
@@ -22,7 +22,7 @@ DEXi Suite consists of three software components:
 
   Available as open-source code, and as portable (.zip) and .msi installers for MS Windows.
 
-- [DexiEval](./DexiEval/README.MD): A command-line utility program for batch evaluation of decision alternatives using a DEXi model. Also build upon DexiLibrary. Available as open-source code, and portable binary installers (.zip, .tgz) for Windows, Java and .NET Core.
+- [DexiEval](./DexiEval/README.md): A command-line utility program for batch evaluation of decision alternatives using a DEXi model. Also build upon DexiLibrary. Available as open-source code, and portable binary installers (.zip, .tgz) for Windows, Java and .NET Core.
 
 Further Information
 -------------------
