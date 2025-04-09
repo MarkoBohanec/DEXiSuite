@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "TestDexiJava", "TestDexiJava\TestDexiJava.elements", "{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "TestDexiNet", "TestDexiNet\TestDexiNet.elements", "{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DexiDLL", "DexiDLL\DexiDLL.elements", "{AC495EA7-9548-40C7-886F-E092D6097C03}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DexiJar", "DexiJar\DexiJar.elements", "{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "TestDexi", "TestDexi\TestDexi.elements", "{D958829D-EBB2-4E48-A7CC-C5C8B40C4090}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DexiLibrary", "DexiLibrary\DexiLibrary.elements", "{7EA69D2F-5055-44FD-BBDF-477B4FD2D99C}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DexiUtils", "DexiUtils\DexiUtils.elements", "{B862A813-B741-435D-B29B-A0BDE9221255}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}.Debug|Default.ActiveCfg = Debug
+		{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}.Debug|Default.Build.0 = Debug
+		{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}.Debug|Default.Deploy.0 = Debug
+		{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}.Release|Default.ActiveCfg = Release
+		{08A85A9F-1A47-45F6-9C87-68E2D1DC9A67}.Release|Default.Build.0 = Release
+		{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}.Debug|Default.ActiveCfg = Debug
+		{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}.Debug|Default.Build.0 = Debug
+		{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}.Debug|Default.Deploy.0 = Debug
+		{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}.Release|Default.ActiveCfg = Release
+		{F4ABC71F-77F8-44A4-AB7C-6F38896BEE93}.Release|Default.Build.0 = Release
+		{AC495EA7-9548-40C7-886F-E092D6097C03}.Debug|Default.ActiveCfg = Debug
+		{AC495EA7-9548-40C7-886F-E092D6097C03}.Debug|Default.Build.0 = Debug
+		{AC495EA7-9548-40C7-886F-E092D6097C03}.Debug|Default.Deploy.0 = Debug
+		{AC495EA7-9548-40C7-886F-E092D6097C03}.Release|Default.ActiveCfg = Release
+		{AC495EA7-9548-40C7-886F-E092D6097C03}.Release|Default.Build.0 = Release
+		{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}.Debug|Default.ActiveCfg = Debug
+		{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}.Debug|Default.Build.0 = Debug
+		{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}.Debug|Default.Deploy.0 = Debug
+		{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}.Release|Default.ActiveCfg = Release
+		{F82EEEE2-14BE-45D3-BF68-42A92DBC1AA4}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF66B1EB-919E-48B7-BFD4-AFE81F68B9B4}
+	EndGlobalSection
+EndGlobal

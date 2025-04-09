@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ImgMoveRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgMoveRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgMoveDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgMoveDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgTreeCollapseOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgTreeCollapseOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgTreeExpandOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgTreeExpandOne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgMoveUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgMoveUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgTreeExpandAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgTreeExpandAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgMoveLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgMoveLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgTreeCollapseAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgTreeCollapseAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgModel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgModel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAttributeAddDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAttributeAddDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAttributeAddRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAttributeAddRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAttributeDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAttributeDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAttributeDuplicate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAttributeDuplicate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFunctionDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFunctionDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAttributeDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAttDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFindNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFindNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFunction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFunctionBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleReverse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleReverse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFunctionDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFunctionDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleSelect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleContinuous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleContinuous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgScaleDiscrete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgScaleDiscrete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueAddDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueAddDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueAddUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueAddUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueBad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueBad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueDuplicate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueDuplicate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueGood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueGood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgRule" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgRule.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgRuleDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgRuleDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgRuleDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgRuleDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgRuleEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgRuleEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAuto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAuto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgBoundAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgBoundAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgBoundDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgBoundDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgBoundEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgBoundEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgWeights" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgWeights.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAlternativeAddLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAlternativeAddLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAlternativeAddRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAlternativeAddRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAlternativeDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAlternativeDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAlternativeDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAlternativeDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgAlternativeDuplicate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgAlternativeDuplicate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgValueEditMulti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgValueEditMulti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevCancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevFirst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevFirst.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevLast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevLast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevNext.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevPageSetup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevPageSetup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevPrev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevPrev.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevPrint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevPrint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevTwoPages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevTwoPages.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevZoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevZoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevZoom100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevZoom100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevZoomFullPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevZoomFullPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevZoomPageWidth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevZoomPageWidth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevBrowse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevBrowse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgReport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgReport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgCompare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgCompare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgGenerate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgGenerate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgPlusMinus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgPlusMinus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgSelExpl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgSelExpl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgReportAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgReportAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgReportCopyOrMove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgReportCopyOrMove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgReportDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgReportDelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgReportDuplicate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgReportDuplicate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgCheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgClear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgClear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Separation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\Separation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stretch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\Stretch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextBorder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\TextBorder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlgAlign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\AlgAlign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlgDistribute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\AlgDistribute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlgQP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\AlgQP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlgWalker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\AlgWalker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirBottomUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\DirBottomUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirLeftRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\DirLeftRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirRightLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\DirRightLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DirTopDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Tree\DirTopDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFunction3D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFunction3D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgFirstChart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgFirstChart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgRedo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgRedo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgUndo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgUndo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgModelDescr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgModelDescr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgDexiWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgDexiWin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevWindow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevWindow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevCopyBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevCopyBitmap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevCopyMetafile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Preview\PrevCopyMetafile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgEvaluationQQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgEvaluationQQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgSymmetricity" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgSymmetricity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgVertReset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\ImgVertReset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

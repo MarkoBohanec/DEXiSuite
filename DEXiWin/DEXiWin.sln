@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DEXiWin", "DEXiWin.elements", "{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}.Debug|Default.ActiveCfg = Debug
+		{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}.Debug|Default.Build.0 = Debug
+		{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}.Debug|Default.Deploy.0 = Debug
+		{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}.Release|Default.ActiveCfg = Release
+		{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A59DA65-D5D5-4924-AB82-4724B37345B7}
+	EndGlobalSection
+EndGlobal

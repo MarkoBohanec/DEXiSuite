@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9b61918a-585a-45b6-ae2c-34f72ce71bf8</SharedGUID>
+    <Import_RootNamespace>DexiLibrary</Import_RootNamespace>
+    <ProjectGuid>{9B61918A-585A-45B6-AE2C-34F72CE71BF8}</ProjectGuid>
+    <BinaryName>DexiLibrary</BinaryName>
+    <Name>DexiLibrary</Name>
+    <RootNamespace>DexiLibrary</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DexiAlternatives.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiAttributes.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiClasses.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiEvaluate.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiFunctions.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiGenerator.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiGraphics.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiModels.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiReports.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiScales.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiSelection.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiStrings.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiValues.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiJson.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiDecisionTrees.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiQQ.pas" />
+    <Compile Include="DexiQQ2.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)DexiDynamic.pas" />
+  </ItemGroup>
+</Project>

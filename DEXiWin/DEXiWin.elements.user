@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DebugArguments />
+    <BinaryName>DEXiWin</BinaryName>
+    <CrossPlatform>False</CrossPlatform>
+  </PropertyGroup>
+</Project>

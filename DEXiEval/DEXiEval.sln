@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DEXiEval", "DEXiEval.elements", "{A464A370-D702-44A6-AAC3-D1D886E5FD2A}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DEXiEvalNetCore", "DEXiEvalNetCore\DEXiEvalNetCore.elements", "{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DEXiEvalNet", "DEXiEvalNet\DEXiEvalNet.elements", "{89269ACF-517A-4A61-80A3-B1EB92C6E547}"
+EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "DEXiEvalJava", "DEXiEvalJava\DEXiEvalJava.elements", "{B1483901-00D1-441C-82F1-E433A9376A63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}.Debug|Default.ActiveCfg = Debug
+		{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}.Debug|Default.Build.0 = Debug
+		{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}.Debug|Default.Deploy.0 = Debug
+		{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}.Release|Default.ActiveCfg = Release
+		{F5ECBAE7-6472-4577-8D68-1ACEEFCC1E3E}.Release|Default.Build.0 = Release
+		{89269ACF-517A-4A61-80A3-B1EB92C6E547}.Debug|Default.ActiveCfg = Debug
+		{89269ACF-517A-4A61-80A3-B1EB92C6E547}.Debug|Default.Build.0 = Debug
+		{89269ACF-517A-4A61-80A3-B1EB92C6E547}.Debug|Default.Deploy.0 = Debug
+		{89269ACF-517A-4A61-80A3-B1EB92C6E547}.Release|Default.ActiveCfg = Release
+		{89269ACF-517A-4A61-80A3-B1EB92C6E547}.Release|Default.Build.0 = Release
+		{B1483901-00D1-441C-82F1-E433A9376A63}.Debug|Default.ActiveCfg = Debug
+		{B1483901-00D1-441C-82F1-E433A9376A63}.Debug|Default.Build.0 = Debug
+		{B1483901-00D1-441C-82F1-E433A9376A63}.Debug|Default.Deploy.0 = Debug
+		{B1483901-00D1-441C-82F1-E433A9376A63}.Release|Default.ActiveCfg = Release
+		{B1483901-00D1-441C-82F1-E433A9376A63}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B631F00-361F-4934-9126-38E7C9F05A46}
+	EndGlobalSection
+EndGlobal

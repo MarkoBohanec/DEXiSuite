@@ -1,0 +1,30 @@
+Install
+=======
+
+Tools for making DEXiWin installation packages:
+
+- DEXiWin_<version>.zip: Portable .ZIP package, to be unpacked on the target computer to some suitable folder and used outright.
+- DEXiWin_<version>.msi: MS Installer package, to be run on the target Microsoft Windows computer.
+
+The installation packages contain:
+
+DEXiWin.exe: The main application file, and
+Echoes.dll, Elements.dll and ObjectList.dll: Dynamic libraries used by the app.
+
+In order to make installation packages, run MakeZipInstall.bat and/or MakeMsiInstall.bat, respectively.
+
+Requirements:
+- MakeZipInstall.bat requires Info zip http://infozip.sourceforge.net/ or equivalent command-line zip archive maker
+- MakeMsiInstall.bat requires WiX Toolset https://wixtoolset.org/
+
+After the packages have been built on /Install, they are transferred to the /Installers folder.
+
+Packed Exe
+----------
+
+Run PackExe.bat to pack all Release-version .exe and .dll files into a single Bin\Packed\DEXiWin.exe.
+In principle, only this single file is sufficient for deploying DEXiWin on a target system.
+
+PackExe.bat uses LibZ, Copyright (c) 2013-2014, Milosz Krajewski
+https://github.com/MiloszKrajewski/LibZ
+

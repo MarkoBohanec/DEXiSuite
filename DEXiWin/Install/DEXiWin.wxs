@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Name="DEXiWin" Manufacturer="Jožef Stefan Institute" Id="*" UpgradeCode="0A403748-D01C-4DE8-ACCE-5F1492394503" Language="1033" Codepage="1252" Version="1.2.0.2">
+		<Package Id="*" Keywords="Installer" Description="DEXiWin Installer" Comments="DEX Decision Modeling Software" Manufacturer="JSI" InstallerVersion="200" InstallScope="perMachine" Languages="1033" Compressed="yes" SummaryCodepage="1252"/>
+		<MajorUpgrade AllowDowngrades="no" AllowSameVersionUpgrades="yes" Disallow="no" IgnoreRemoveFailure="no" MigrateFeatures="yes" Schedule="afterInstallInitialize" DowngradeErrorMessage="A newer version of [ProductName] is already installed."/>
+		<MediaTemplate EmbedCab="yes"/>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder" Name="PFiles">
+				<Directory Id="JSIFiles" Name="JSI">
+					<Directory Id="DEXiWinFiles" Name="DEXiWin" FileSource="D:\DEXiWin\Bin\Release">
+						<Component Id="MainExecutable">
+							<File Id="DEXiWinExe" Name="DEXiWin.exe" KeyPath="yes" Checksum="yes">
+								<Shortcut Id="startmenuDEXiWinEXE" Directory="ProgramMenuDir" Name="DEXiWin" WorkingDirectory="INSTALLDIR" Icon="DEXiWin.exe" IconIndex="0" Advertise="yes"/>
+								<Shortcut Id="desktopDEXiWinEXE" Directory="DesktopFolder" Name="DEXiWin" WorkingDirectory="INSTALLDIR" Icon="DEXiWin.exe" IconIndex="0" Advertise="yes"/>
+							</File>
+						</Component>
+						<Component Id="dllElements">
+							<File Id="ElementsDLL" Name="Elements.dll"/>
+						</Component>
+						<Component Id="dllEchoes">
+							<File Id="EchoesDLL" Name="Echoes.dll"/>
+						</Component>
+						<Component Id="dllObjectListView">
+							<File Id="ObjectListViewDLL" Name="ObjectListView.dll"/>
+						</Component>
+						<Component Id="License">
+							<File Id="License.rtf" Name="License.rtf" KeyPath="yes"/>
+						</Component>
+						<Component Id="Copying">
+							<File Id="COPYING.md" Name="COPYING.md" KeyPath="yes"/>
+						</Component>
+						<Component Id="Acknowledgments">
+							<File Id="ACKNOWLEDGMENTS.md" Name="ACKNOWLEDGMENTS.md" KeyPath="yes"/>
+						</Component>
+						<Component Id="Examples">
+							<File Id="DEXiExamples.zip" Name="DEXiExamples.zip" KeyPath="yes"/>
+						</Component>
+					</Directory>
+				</Directory>
+			</Directory>
+			<Directory Id="ProgramMenuFolder" Name="Programs">
+				<Directory Id="ProgramMenuDir" Name="DEXiWin">
+					<Component Id="ProgramMenuDir" Guid="7EB52E92-279D-4202-A293-B408DAFD3D80">
+						<RemoveFolder Id="ProgramMenuDir" On="uninstall"/>
+						<RegistryValue Root="HKCU" Key="Software\JSI\DEXiWin" Type="string" Value="installed" KeyPath="yes"/>
+						<Shortcut Id="Uninstall" Name="Uninstall DEXiWin" Description="Uninstalls DEXiWin" Target="[System64Folder]msiexec.exe" Arguments="/x [ProductCode]"/>
+					</Component>
+				</Directory>
+			</Directory>
+			<Directory Id="DesktopFolder" Name="Desktop"/>
+		</Directory>
+		<Feature Id="Complete" Level="1">
+			<ComponentRef Id="MainExecutable"/>
+			<ComponentRef Id="License"/>
+			<ComponentRef Id="Copying"/>
+			<ComponentRef Id="Acknowledgments"/>
+			<ComponentRef Id="Examples"/>
+			<ComponentRef Id="dllElements"/>
+			<ComponentRef Id="dllEchoes"/>
+			<ComponentRef Id="dllObjectListView"/>
+			<ComponentRef Id="ProgramMenuDir"/>
+		</Feature>
+		<Icon Id="DEXiWin.exe" SourceFile="D:\DEXiWin\Bin\Release\DEXiWin.exe"/>
+		<Icon Id="DEXiWin.ico" SourceFile="D:\DEXiWin\Bin\Release\DEXiWin.exe"/>
+		<Property Id="ARPPRODUCTICON" Value="DEXiWin.ico"/>
+		<UIRef Id="WixUI_Minimal"/>
+		<UIRef Id="WixUI_ErrorProgressText"/>
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf"/>
+		<WixVariable Id="WixUIDialogBmp" Value="DEXiWin_Install.bmp"/>
+	</Product>
+</Wix>

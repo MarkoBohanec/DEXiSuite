@@ -1,0 +1,247 @@
+﻿namespace DexiWin;
+
+interface
+
+{$HIDE H7}
+
+uses
+  System.Drawing,
+  System.Collections,
+  System.Windows.Forms,
+  System.ComponentModel;
+
+type
+  FormValueEditor = partial class
+  {$REGION Windows Form Designer generated fields}
+  private
+    BtnNullRange: System.Windows.Forms.Button;
+    BtnMax1: System.Windows.Forms.Button;
+    BtnSum1: System.Windows.Forms.Button;
+    BtnFullRange: System.Windows.Forms.Button;
+    PanelBottom: System.Windows.Forms.Panel;
+    PanelTop: System.Windows.Forms.Panel;
+    PanelMain: System.Windows.Forms.Panel;
+    PanelTable: System.Windows.Forms.Panel;
+    ColValue: BrightIdeasSoftware.OLVColumn;
+    ColMembership: BrightIdeasSoftware.OLVColumn;
+    ViewDistribution: BrightIdeasSoftware.ObjectListView;
+    ComboValueType: System.Windows.Forms.ComboBox;
+    LblValueType: System.Windows.Forms.Label;
+    BarRendererActual: BrightIdeasSoftware.BarRenderer;
+    BarRendererRequired: BrightIdeasSoftware.BarRenderer;
+    GrpNormalize: System.Windows.Forms.GroupBox;
+    BtnCancel: System.Windows.Forms.Button;
+    BtnOK: System.Windows.Forms.Button;
+    var components: System.ComponentModel.Container := nil;
+    method InitializeComponent;
+  {$ENDREGION}
+  end;
+
+implementation
+
+{$REGION Windows Form Designer generated code}
+method FormValueEditor.InitializeComponent;
+begin
+  self.PanelBottom := new System.Windows.Forms.Panel();
+  self.BtnCancel := new System.Windows.Forms.Button();
+  self.BtnOK := new System.Windows.Forms.Button();
+  self.BarRendererRequired := new BrightIdeasSoftware.BarRenderer();
+  self.BarRendererActual := new BrightIdeasSoftware.BarRenderer();
+  self.PanelTop := new System.Windows.Forms.Panel();
+  self.BtnNullRange := new System.Windows.Forms.Button();
+  self.BtnFullRange := new System.Windows.Forms.Button();
+  self.ComboValueType := new System.Windows.Forms.ComboBox();
+  self.LblValueType := new System.Windows.Forms.Label();
+  self.PanelMain := new System.Windows.Forms.Panel();
+  self.PanelTable := new System.Windows.Forms.Panel();
+  self.ViewDistribution := new BrightIdeasSoftware.ObjectListView();
+  self.ColValue := (new BrightIdeasSoftware.OLVColumn() as BrightIdeasSoftware.OLVColumn);
+  self.ColMembership := (new BrightIdeasSoftware.OLVColumn() as BrightIdeasSoftware.OLVColumn);
+  self.GrpNormalize := new System.Windows.Forms.GroupBox();
+  self.BtnMax1 := new System.Windows.Forms.Button();
+  self.BtnSum1 := new System.Windows.Forms.Button();
+  self.PanelBottom.SuspendLayout();
+  self.PanelTop.SuspendLayout();
+  self.PanelMain.SuspendLayout();
+  self.PanelTable.SuspendLayout();
+  (self.ViewDistribution as System.ComponentModel.ISupportInitialize).BeginInit();
+  self.GrpNormalize.SuspendLayout();
+  self.SuspendLayout();
+  self.PanelBottom.Controls.Add(self.BtnCancel);
+  self.PanelBottom.Controls.Add(self.BtnOK);
+  self.PanelBottom.Dock := System.Windows.Forms.DockStyle.Bottom;
+  self.PanelBottom.Location := new System.Drawing.Point(0, 220);
+  self.PanelBottom.Name := 'PanelBottom';
+  self.PanelBottom.Size := new System.Drawing.Size(416, 47);
+  self.PanelBottom.TabIndex := 0;
+  self.BtnCancel.Anchor := (System.Windows.Forms.AnchorStyles.Bottom or System.Windows.Forms.AnchorStyles.Left as System.Windows.Forms.AnchorStyles);
+  self.BtnCancel.CausesValidation := false;
+  self.BtnCancel.DialogResult := System.Windows.Forms.DialogResult.Cancel;
+  self.BtnCancel.Location := new System.Drawing.Point(101, 12);
+  self.BtnCancel.Name := 'BtnCancel';
+  self.BtnCancel.Size := new System.Drawing.Size(75, 23);
+  self.BtnCancel.TabIndex := 8;
+  self.BtnCancel.Text := '&Cancel';
+  self.BtnCancel.UseVisualStyleBackColor := true;
+  self.BtnOK.Anchor := (System.Windows.Forms.AnchorStyles.Bottom or System.Windows.Forms.AnchorStyles.Left as System.Windows.Forms.AnchorStyles);
+  self.BtnOK.DialogResult := System.Windows.Forms.DialogResult.OK;
+  self.BtnOK.Location := new System.Drawing.Point(20, 12);
+  self.BtnOK.Name := 'BtnOK';
+  self.BtnOK.Size := new System.Drawing.Size(75, 23);
+  self.BtnOK.TabIndex := 7;
+  self.BtnOK.Text := '&OK';
+  self.BtnOK.UseVisualStyleBackColor := true;
+  self.BtnOK.Click += new System.EventHandler(self.BtnOK_Click);
+  self.BarRendererRequired.GradientEndColor := System.Drawing.Color.Blue;
+  self.BarRendererRequired.MaximumWidth := 300;
+  self.BarRendererRequired.UseStandardBar := false;
+  self.BarRendererActual.FillColor := System.Drawing.Color.Blue;
+  self.BarRendererActual.GradientEndColor := System.Drawing.Color.Blue;
+  self.BarRendererActual.MaximumWidth := 300;
+  self.BarRendererActual.UseStandardBar := false;
+  self.PanelTop.Controls.Add(self.BtnNullRange);
+  self.PanelTop.Controls.Add(self.BtnFullRange);
+  self.PanelTop.Controls.Add(self.ComboValueType);
+  self.PanelTop.Controls.Add(self.LblValueType);
+  self.PanelTop.Dock := System.Windows.Forms.DockStyle.Top;
+  self.PanelTop.Location := new System.Drawing.Point(0, 0);
+  self.PanelTop.Name := 'PanelTop';
+  self.PanelTop.Size := new System.Drawing.Size(416, 67);
+  self.PanelTop.TabIndex := 1;
+  self.BtnNullRange.Location := new System.Drawing.Point(331, 31);
+  self.BtnNullRange.Name := 'BtnNullRange';
+  self.BtnNullRange.Size := new System.Drawing.Size(75, 23);
+  self.BtnNullRange.TabIndex := 3;
+  self.BtnNullRange.Text := '&Clear all';
+  self.BtnNullRange.UseVisualStyleBackColor := true;
+  self.BtnNullRange.Click += new System.EventHandler(self.BtnNullRange_Click);
+  self.BtnFullRange.Location := new System.Drawing.Point(250, 31);
+  self.BtnFullRange.Name := 'BtnFullRange';
+  self.BtnFullRange.Size := new System.Drawing.Size(75, 23);
+  self.BtnFullRange.TabIndex := 2;
+  self.BtnFullRange.Text := '&Full range';
+  self.BtnFullRange.UseVisualStyleBackColor := true;
+  self.BtnFullRange.Click += new System.EventHandler(self.BtnFullRange_Click);
+  self.ComboValueType.DropDownStyle := System.Windows.Forms.ComboBoxStyle.DropDownList;
+  self.ComboValueType.FormattingEnabled := true;
+  self.ComboValueType.Items.AddRange(array of System.Object(['Undefined value (<undefined>)', 'Single value', 'Value set', 'Value distribution']));
+  self.ComboValueType.Location := new System.Drawing.Point(8, 32);
+  self.ComboValueType.Name := 'ComboValueType';
+  self.ComboValueType.Size := new System.Drawing.Size(227, 21);
+  self.ComboValueType.TabIndex := 1;
+  self.ComboValueType.SelectionChangeCommitted += new System.EventHandler(self.ComboValueType_SelectionChangeCommitted);
+  self.LblValueType.AutoSize := true;
+  self.LblValueType.Location := new System.Drawing.Point(8, 10);
+  self.LblValueType.Name := 'LblValueType';
+  self.LblValueType.Size := new System.Drawing.Size(57, 13);
+  self.LblValueType.TabIndex := 12;
+  self.LblValueType.Text := 'Value &type';
+  self.PanelMain.Controls.Add(self.PanelTable);
+  self.PanelMain.Controls.Add(self.GrpNormalize);
+  self.PanelMain.Dock := System.Windows.Forms.DockStyle.Fill;
+  self.PanelMain.Location := new System.Drawing.Point(0, 67);
+  self.PanelMain.Name := 'PanelMain';
+  self.PanelMain.Size := new System.Drawing.Size(416, 153);
+  self.PanelMain.TabIndex := 2;
+  self.PanelTable.Controls.Add(self.ViewDistribution);
+  self.PanelTable.Dock := System.Windows.Forms.DockStyle.Fill;
+  self.PanelTable.Location := new System.Drawing.Point(0, 0);
+  self.PanelTable.Name := 'PanelTable';
+  self.PanelTable.Size := new System.Drawing.Size(326, 153);
+  self.PanelTable.TabIndex := 15;
+  self.ViewDistribution.AllColumns.Add(self.ColValue);
+  self.ViewDistribution.AllColumns.Add(self.ColMembership);
+  self.ViewDistribution.CellEditUseWholeCell := false;
+  self.ViewDistribution.CheckBoxes := true;
+  self.ViewDistribution.CheckedAspectName := 'Checked';
+  self.ViewDistribution.Columns.AddRange(array of System.Windows.Forms.ColumnHeader([self.ColValue, self.ColMembership]));
+  self.ViewDistribution.Cursor := System.Windows.Forms.Cursors.Default;
+  self.ViewDistribution.Dock := System.Windows.Forms.DockStyle.Fill;
+  self.ViewDistribution.HeaderStyle := System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+  self.ViewDistribution.HideSelection := false;
+  self.ViewDistribution.IsSearchOnSortColumn := false;
+  self.ViewDistribution.Location := new System.Drawing.Point(0, 0);
+  self.ViewDistribution.MultiSelect := false;
+  self.ViewDistribution.Name := 'ViewDistribution';
+  self.ViewDistribution.ShowFilterMenuOnRightClick := false;
+  self.ViewDistribution.Size := new System.Drawing.Size(326, 153);
+  self.ViewDistribution.TabIndex := 4;
+  self.ViewDistribution.UseCellFormatEvents := true;
+  self.ViewDistribution.UseCompatibleStateImageBehavior := false;
+  self.ViewDistribution.View := System.Windows.Forms.View.Details;
+  self.ViewDistribution.CellEditFinished += new BrightIdeasSoftware.CellEditEventHandler(self.ViewDistribution_CellEditFinished);
+  self.ViewDistribution.CellEditFinishing += new BrightIdeasSoftware.CellEditEventHandler(self.ViewDistribution_CellEditFinishing);
+  self.ViewDistribution.CellEditValidating += new BrightIdeasSoftware.CellEditEventHandler(self.ViewDistribution_CellEditValidating);
+  self.ViewDistribution.FormatCell += new System.EventHandler<BrightIdeasSoftware.FormatCellEventArgs>(self.ViewDistribution_FormatCell);
+  self.ViewDistribution.SelectionChanged += new System.EventHandler(self.ViewDistribution_SelectionChanged);
+  self.ViewDistribution.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(self.ViewDistribution_ItemChecked);
+  self.ViewDistribution.DoubleClick += new System.EventHandler(self.ViewDistribution_DoubleClick);
+  self.ViewDistribution.KeyDown += new System.Windows.Forms.KeyEventHandler(self.ViewDistribution_KeyDown);
+  self.ColValue.AspectName := 'Name';
+  self.ColValue.AutoCompleteEditor := false;
+  self.ColValue.AutoCompleteEditorMode := System.Windows.Forms.AutoCompleteMode.None;
+  self.ColValue.Groupable := false;
+  self.ColValue.Hideable := false;
+  self.ColValue.IsEditable := false;
+  self.ColValue.MinimumWidth := 120;
+  self.ColValue.Searchable := false;
+  self.ColValue.Sortable := false;
+  self.ColValue.Text := 'Value';
+  self.ColValue.UseFiltering := false;
+  self.ColValue.Width := 150;
+  self.ColValue.WordWrap := true;
+  self.ColMembership.AspectName := 'MembString';
+  self.ColMembership.Groupable := false;
+  self.ColMembership.MinimumWidth := 100;
+  self.ColMembership.Searchable := false;
+  self.ColMembership.Sortable := false;
+  self.ColMembership.Text := 'Membership';
+  self.ColMembership.UseFiltering := false;
+  self.ColMembership.Width := 100;
+  self.GrpNormalize.Controls.Add(self.BtnMax1);
+  self.GrpNormalize.Controls.Add(self.BtnSum1);
+  self.GrpNormalize.Dock := System.Windows.Forms.DockStyle.Right;
+  self.GrpNormalize.Location := new System.Drawing.Point(326, 0);
+  self.GrpNormalize.Name := 'GrpNormalize';
+  self.GrpNormalize.Size := new System.Drawing.Size(90, 153);
+  self.GrpNormalize.TabIndex := 14;
+  self.GrpNormalize.TabStop := false;
+  self.GrpNormalize.Text := 'Normalize';
+  self.BtnMax1.Location := new System.Drawing.Point(6, 52);
+  self.BtnMax1.Name := 'BtnMax1';
+  self.BtnMax1.Size := new System.Drawing.Size(75, 23);
+  self.BtnMax1.TabIndex := 6;
+  self.BtnMax1.Text := '&Max 1';
+  self.BtnMax1.UseVisualStyleBackColor := true;
+  self.BtnMax1.Click += new System.EventHandler(self.BtnMax1_Click);
+  self.BtnSum1.Location := new System.Drawing.Point(6, 22);
+  self.BtnSum1.Name := 'BtnSum1';
+  self.BtnSum1.Size := new System.Drawing.Size(75, 23);
+  self.BtnSum1.TabIndex := 5;
+  self.BtnSum1.Text := '&Sum 1';
+  self.BtnSum1.UseVisualStyleBackColor := true;
+  self.BtnSum1.Click += new System.EventHandler(self.BtnSum1_Click);
+  self.AutoScaleDimensions := new System.Drawing.SizeF(6.0, 13.0);
+  self.AutoScaleMode := System.Windows.Forms.AutoScaleMode.Font;
+  self.ClientSize := new System.Drawing.Size(416, 267);
+  self.Controls.Add(self.PanelMain);
+  self.Controls.Add(self.PanelTop);
+  self.Controls.Add(self.PanelBottom);
+  self.Name := 'FormValueEditor';
+  self.ShowIcon := false;
+  self.ShowInTaskbar := false;
+  self.StartPosition := System.Windows.Forms.FormStartPosition.CenterParent;
+  self.Text := 'Edit value: {0} of {1}';
+  self.Shown += new System.EventHandler(self.FormValueEditor_Shown);
+  self.PanelBottom.ResumeLayout(false);
+  self.PanelTop.ResumeLayout(false);
+  self.PanelTop.PerformLayout();
+  self.PanelMain.ResumeLayout(false);
+  self.PanelTable.ResumeLayout(false);
+  (self.ViewDistribution as System.ComponentModel.ISupportInitialize).EndInit();
+  self.GrpNormalize.ResumeLayout(false);
+  self.ResumeLayout(false);
+end;
+{$ENDREGION}
+
+end.

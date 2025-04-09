@@ -1,0 +1,38 @@
+setlocal
+set AppDir=D:\DEXiEval\DEXiEvalJava\
+set AppName=DEXiEvalJava
+pushd %AppDir%\Bin\Packed
+gosub removetmp
+mkdir tmp
+cd tmp
+gosub unpackjar ..\..\Release\cooper.jar
+gosub unpackjar ..\..\Release\elements.jar
+gosub unpackjar ..\..\Release\dexijar.jar
+gosub unpackjar ..\..\Release\dexievaljava.jar
+jar -cmf META-INF\MANIFEST.MF ..\%AppName%.jar .
+cd ..
+gosub removetmp
+
+set launch4jc="C:\Program Files (x86)\Launch4j\launch4jc.exe"
+iff not exist %launch4jc then
+  echo Cannot make .exe file: Not found: %launch4jc%
+  quit
+endiff
+
+*del %AppName%.exe
+
+%launch4jc% %AppName%.xml
+
+popd
+quit
+
+
+:removetmp
+del tmp\.../a:*/l/dep >nul
+rd tmp
+return
+
+:unpackjar [jar]
+echo Unpacking %jar
+jar -xf %jar
+return

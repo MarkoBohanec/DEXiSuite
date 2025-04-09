@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>3.5</ProductVersion>
+    <ProjectGuid>{C1C58ECA-F5A6-4ACC-8C66-57F810B801A3}</ProjectGuid>
+    <RootNamespace>DEXiWin</RootNamespace>
+    <OutputType>WinExe</OutputType>
+    <ApplicationIcon>Properties\App.ico</ApplicationIcon>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <TargetFramework>.NETFramework4.8</TargetFramework>
+    <Name>DEXiWin</Name>
+    <BinaryName>DEXiWin</BinaryName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <Optimize>False</Optimize>
+    <OutputPath>.\Bin\Debug</OutputPath>
+    <ConditionalDefines>DEBUG;TRACE;</ConditionalDefines>
+    <GeneratePDB>True</GeneratePDB>
+    <GenerateMDB>True</GenerateMDB>
+    <EnableAsserts>True</EnableAsserts>
+    <CpuType>anycpu</CpuType>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <BinaryName>DEXiWin</BinaryName>
+    <CrossPlatform>False</CrossPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\Bin\Release</OutputPath>
+    <CpuType>anycpu</CpuType>
+    <EnableUnmanagedDebugging>False</EnableUnmanagedDebugging>
+    <BinaryName>DEXiWin</BinaryName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Echoes">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elements">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>D:\DEXiWin\packages\ObjectListView.ClientProfile.2.9.5\lib\net40-Client\ObjectListView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.pas" />
+    <Content Include="Properties\App.ico" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <Compile Include="Properties\Resources.Designer.pas">
+      <DependentUpon>Properties\Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.pas">
+      <DependentUpon>Properties\Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DexiLibrary\DexiLibrary\DexiAlternatives.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiAttributes.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiClasses.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiEvaluate.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiFunctions.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiGenerator.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiGraphics.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiModels.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiReports.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiScales.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiSelection.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiStrings.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiValues.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\DualQP.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Formatters.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Graphics.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\MultiLin.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Reports.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Timer.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\TreeDraw.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\UndoRedo.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Utils.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Values.pas" />
+    <Compile Include="DexiLibrary\DexiUtils\Vectors.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiJson.pas" />
+    <Compile Include="Application\AppData.pas" />
+    <Compile Include="Application\AppUtils.pas" />
+    <Compile Include="Application\Program.pas" />
+    <Compile Include="Forms\CtrlTabs.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlTabs.Designer.pas">
+      <DependentUpon>Forms\CtrlTabs.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlTabs.resx">
+      <DependentUpon>Forms\CtrlTabs.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlDimItem.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlDimItem.Designer.pas">
+      <DependentUpon>Forms\CtrlDimItem.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlDimItem.resx">
+      <DependentUpon>Forms\CtrlDimItem.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlForm.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlForm.Designer.pas">
+      <DependentUpon>Forms\CtrlForm.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlForm.resx">
+      <DependentUpon>Forms\CtrlForm.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormAlternatives.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormAlternatives.Designer.pas">
+      <DependentUpon>Forms\CtrlFormAlternatives.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormAlternatives.resx">
+      <DependentUpon>Forms\CtrlFormAlternatives.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormBrowse.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormBrowse.Designer.pas">
+      <DependentUpon>Forms\CtrlFormBrowse.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormBrowse.resx">
+      <DependentUpon>Forms\CtrlFormBrowse.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormCharts.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormCharts.Designer.pas">
+      <DependentUpon>Forms\CtrlFormCharts.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormCharts.resx">
+      <DependentUpon>Forms\CtrlFormCharts.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormEvaluation.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormEvaluation.Designer.pas">
+      <DependentUpon>Forms\CtrlFormEvaluation.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormEvaluation.resx">
+      <DependentUpon>Forms\CtrlFormEvaluation.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormFunctChart.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormFunctChart.Designer.pas">
+      <DependentUpon>Forms\CtrlFormFunctChart.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormFunctChart.resx">
+      <DependentUpon>Forms\CtrlFormFunctChart.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormModel.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormModel.Designer.pas">
+      <DependentUpon>Forms\CtrlFormModel.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormModel.resx">
+      <DependentUpon>Forms\CtrlFormModel.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormReport.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormReport.Designer.pas">
+      <DependentUpon>Forms\CtrlFormReport.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormReport.resx">
+      <DependentUpon>Forms\CtrlFormReport.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlFormTree.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlFormTree.Designer.pas">
+      <DependentUpon>Forms\CtrlFormTree.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlFormTree.resx">
+      <DependentUpon>Forms\CtrlFormTree.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlNameEdit.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlNameEdit.Designer.pas">
+      <DependentUpon>Forms\CtrlNameEdit.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlNameEdit.resx">
+      <DependentUpon>Forms\CtrlNameEdit.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\CtrlPreview.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlPreview.Designer.pas">
+      <DependentUpon>Forms\CtrlPreview.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlRptFormat.pas">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\CtrlRptFormat.Designer.pas">
+      <DependentUpon>Forms\CtrlRptFormat.pas</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\CtrlRptFormat.resx">
+      <DependentUpon>Forms\CtrlRptFormat.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="WinUtils\ClipboardHelper.pas" />
+    <Compile Include="WinUtils\DexiTreeDraw.pas" />
+    <Compile Include="Forms\FormWeights.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormWeights.Designer.pas">
+      <DependentUpon>Forms\FormWeights.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormWeights.resx">
+      <DependentUpon>Forms\FormWeights.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormAbout.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAbout.Designer.pas">
+      <DependentUpon>Forms\FormAbout.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormAbout.resx">
+      <DependentUpon>Forms\FormAbout.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormBoundEdit.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBoundEdit.Designer.pas">
+      <DependentUpon>Forms\FormBoundEdit.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormBoundEdit.resx">
+      <DependentUpon>Forms\FormBoundEdit.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormBrowse.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormBrowse.Designer.pas">
+      <DependentUpon>Forms\FormBrowse.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormBrowse.resx">
+      <DependentUpon>Forms\FormBrowse.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormFunctChart.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFunctChart.Designer.pas">
+      <DependentUpon>Forms\FormFunctChart.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormFunctChart.resx">
+      <DependentUpon>Forms\FormFunctChart.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormFunctEditDiscretize.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFunctEditDiscretize.Designer.pas">
+      <DependentUpon>Forms\FormFunctEditDiscretize.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormFunctEditDiscretize.resx">
+      <DependentUpon>Forms\FormFunctEditDiscretize.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormFunctEditTabular.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormFunctEditTabular.Designer.pas">
+      <DependentUpon>Forms\FormFunctEditTabular.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormFunctEditTabular.resx">
+      <DependentUpon>Forms\FormFunctEditTabular.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormMain.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.pas">
+      <DependentUpon>Forms\FormMain.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>Forms\FormMain.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormModel.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormModel.Designer.pas">
+      <DependentUpon>Forms\FormModel.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormModel.resx">
+      <DependentUpon>Forms\FormModel.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormNameEdit.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormNameEdit.Designer.pas">
+      <DependentUpon>Forms\FormNameEdit.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormNameEdit.resx">
+      <DependentUpon>Forms\FormNameEdit.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormReport.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReport.Designer.pas">
+      <DependentUpon>Forms\FormReport.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormReport.resx">
+      <DependentUpon>Forms\FormReport.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormReportManager.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReportManager.Designer.pas">
+      <DependentUpon>Forms\FormReportManager.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormReportManager.resx">
+      <DependentUpon>Forms\FormReportManager.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormReportParameters.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormReportParameters.Designer.pas">
+      <DependentUpon>Forms\FormReportParameters.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormReportParameters.resx">
+      <DependentUpon>Forms\FormReportParameters.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormScaleCreate.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormScaleCreate.Designer.pas">
+      <DependentUpon>Forms\FormScaleCreate.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormScaleCreate.resx">
+      <DependentUpon>Forms\FormScaleCreate.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormScaleEditContinuous.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormScaleEditContinuous.Designer.pas">
+      <DependentUpon>Forms\FormScaleEditContinuous.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormScaleEditContinuous.resx">
+      <DependentUpon>Forms\FormScaleEditContinuous.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormScaleEditDiscrete.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormScaleEditDiscrete.Designer.pas">
+      <DependentUpon>Forms\FormScaleEditDiscrete.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormScaleEditDiscrete.resx">
+      <DependentUpon>Forms\FormScaleEditDiscrete.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormScaleSelect.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormScaleSelect.Designer.pas">
+      <DependentUpon>Forms\FormScaleSelect.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormScaleSelect.resx">
+      <DependentUpon>Forms\FormScaleSelect.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormSearch.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSearch.Designer.pas">
+      <DependentUpon>Forms\FormSearch.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormSearch.resx">
+      <DependentUpon>Forms\FormSearch.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormShapeEdit.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormShapeEdit.Designer.pas">
+      <DependentUpon>Forms\FormShapeEdit.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormShapeEdit.resx">
+      <DependentUpon>Forms\FormShapeEdit.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormSystem.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSystem.Designer.pas">
+      <DependentUpon>Forms\FormSystem.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormSystem.resx">
+      <DependentUpon>Forms\FormSystem.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormTree.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormTree.Designer.pas">
+      <DependentUpon>Forms\FormTree.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormTree.resx">
+      <DependentUpon>Forms\FormTree.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Forms\FormValueEditor.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormValueEditor.Designer.pas">
+      <DependentUpon>Forms\FormValueEditor.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormValueEditor.resx">
+      <DependentUpon>Forms\FormValueEditor.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="WinUtils\WinFormatter.pas" />
+    <Compile Include="WinUtils\WinGraphics.pas" />
+    <Compile Include="WinUtils\WinTreeDraw.pas" />
+    <Compile Include="WinUtils\WinUtils.pas" />
+    <Compile Include="Forms\FormSettings.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSettings.Designer.pas">
+      <DependentUpon>Forms\FormSettings.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormSettings.resx">
+      <DependentUpon>Forms\FormSettings.pas</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="DexiLibrary\DexiUtils\Lists.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiDecisionTrees.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiDynamic.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiQQ2.pas" />
+    <Compile Include="DexiLibrary\DexiLibrary\DexiQQ.pas" />
+    <Compile Include="Forms\FormSymmetricity.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSymmetricity.Designer.pas">
+      <DependentUpon>Forms\FormSymmetricity.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormSymmetricity.resx">
+      <DependentUpon>Forms\FormSymmetricity.pas</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="packages.config" />
+    <Compile Include="Forms\FormList.pas">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormList.Designer.pas">
+      <DependentUpon>Forms\FormList.pas</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormList.resx">
+      <DependentUpon>Forms\FormList.pas</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Echoes.targets" />
+</Project>

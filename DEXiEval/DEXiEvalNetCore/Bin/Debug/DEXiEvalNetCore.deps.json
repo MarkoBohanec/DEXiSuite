@@ -1,0 +1,52 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {
+    "defines": [
+      "DEBUG",
+      "TRACE"
+    ]
+  },
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DEXiEvalNetCore/1.0.0": {
+        "dependencies": {
+        },
+        "runtime": {
+          "DEXiEvalNetCore.dll": {
+          },
+          "DexiDLL.dll": {
+          },
+          "Echoes.dll": {
+          },
+          "Elements.dll": {
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DEXiEvalNetCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DexiDLL": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Echoes": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Elements": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9b61918a-585a-45b6-ae2c-34f72ce71bf8}</ProjectGuid>
+    <RootNamespace>DexiLibrary</RootNamespace>
+  </PropertyGroup>
+  <Import Project="DexiLibrary.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.SharedProject.targets" />
+</Project>

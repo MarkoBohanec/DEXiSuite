@@ -1,0 +1,45 @@
+Install
+=======
+
+Tools for making DEXiEval installation archives:
+
+- DEXiEval_<version>.zip
+- DEXiEval_<version>.tgz
+
+Both installation archives contain command-line utility program DEXiEval together with all
+required class libraries for target systems:
+
+- Java
+- Windows [.NET Framework]
+- NetCore [.NET Core]
+
+In order to make installation packages, run MakeZipInstall.bat. Requirements:
+- Info zip http://infozip.sourceforge.net/ or equivalent command-line zip archive maker
+- Assumes that the tar utility is located at C:\Windows\System32\
+
+After the packages have been built on /Install, they are transferred to the /Installers folder.
+
+Packed Exe for Windows
+----------------------
+
+Run PackExe.bat to pack all DEXiEvalNet Release-version .exe and .dll files into a single DEXiEvalNet\Bin\Packed\DEXiEvalNet.exe.
+
+In principle, only this single file is sufficient for deploying DEXiEval on a target system.
+
+PackExe.bat uses LibZ, Copyright (c) 2013-2014, Milosz Krajewski
+https://github.com/MiloszKrajewski/LibZ
+
+Packed Jar and Exe for Java
+---------------------------
+
+Run PackJar.btm to pack all DEXiEvalJava Release-version jars to:
+- a single jar file DEXiEvalJava\Bin\Packed\DEXiEvalJava.jar
+- a single exe file DEXiEvalJava\Bin\Packed\DEXiEvalJava.exe
+
+In principle, each of these single files is sufficient for deploying DEXiEval on a target system.
+The Java runtime engine must still be installed on the target system, together with a
+proper setting of the JAVA_HOME environment variable.
+
+DEXiEvalJava.exe is produced as a Windows wrapper around DEXiEvalJava.jar, using (and requiring):
+
+launch4j: Cross-platform Java executable wrapper [https://launch4j.sourceforge.net/]

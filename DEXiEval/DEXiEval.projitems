@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a464a370-d702-44a6-aac3-d1d886e5fd2a</SharedGUID>
+    <Import_RootNamespace>DEXiEval</Import_RootNamespace>
+    <ProjectGuid>{A464A370-D702-44A6-AAC3-D1D886E5FD2A}</ProjectGuid>
+    <BinaryName>DEXiEval</BinaryName>
+    <Name>DEXiEval</Name>
+    <RootNamespace>DEXiEval</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DEXiEval.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Parameters.pas" />
+  </ItemGroup>
+</Project>

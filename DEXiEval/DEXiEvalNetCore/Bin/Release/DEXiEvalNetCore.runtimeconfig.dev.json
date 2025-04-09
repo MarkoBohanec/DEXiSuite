@@ -1,0 +1,10 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Mare\\AppData\\Local\\RemObjects Software\\EBuild\\Packages\\NuGet",
+      "C:\\Users\\Mare\\.nuget\\packages\\",
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

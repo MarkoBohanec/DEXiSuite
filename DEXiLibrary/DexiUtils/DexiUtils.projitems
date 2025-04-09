@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>58b68e90-af4c-4123-9889-e7d4cbde7dd8</SharedGUID>
+    <Import_RootNamespace>DexiUtils</Import_RootNamespace>
+    <ProjectGuid>{58B68E90-AF4C-4123-9889-E7D4CBDE7DD8}</ProjectGuid>
+    <BinaryName>DexiUtils</BinaryName>
+    <Name>DexiUtils</Name>
+    <RootNamespace>DexiUtils</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)DualQP.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Formatters.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Graphics.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)MultiLin.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Reports.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Timer.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)TreeDraw.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)UndoRedo.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Values.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Vectors.pas" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lists.pas" />
+  </ItemGroup>
+</Project>

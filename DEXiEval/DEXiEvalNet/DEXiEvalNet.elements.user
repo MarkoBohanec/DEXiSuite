@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <DebugArguments>
+      <Argument>d:\tmp\cardistr.dxi</Argument>
+      <Argument>d:\tmp\inputs.tab</Argument>
+      <Argument Disabled="True">-tab</Argument>
+      <Argument>-l</Argument>
+      <Argument>D:\tmp\out</Argument>
+    </DebugArguments>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,11 @@
+	Car1	Car2
+CAR	4	3
+. PRICE	3	2
+. . BUY_PRICE	2	2
+. . MAINT_PRICE	3	2
+. TECH_CHAR_	4	3
+. . COMFORT	3	3
+. . . _PERS	3	3
+. . . _DOORS	3	3
+. . . LUGGAGE	3	3
+. . SAFETY	3	2
