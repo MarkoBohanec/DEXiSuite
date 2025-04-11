@@ -4,6 +4,17 @@ DEXiWin Versions
 Version 1.2
 -----------
 
+### Build 1.2.0.2
+
+Released: 2025-10-20
+
+- Change log:
+  - Fixed program crashing while editing input values of alternatives using ComboBox
+  - Improved garbage collection of DEXi objects
+ 
+
+### Build 1.2.0.1
+
 Released: 2024-07-02
 
 - New functionality:
