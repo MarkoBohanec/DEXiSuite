@@ -4,9 +4,9 @@ DEXiWin
 DEXi Decision Modeling Software
 -------------------------------
 
-Copyright (C) 2023 Department of Knowledge Technologies, Jožef Stefan Institute
+Copyright (C) 2023-2025 Department of Knowledge Technologies, Jožef Stefan Institute
 
-**DEXiWin** is a Microsoft Windows desktop program for developing and using hierarchical qualitative multi-criteria decision models according to the method DEX ([DEcision Expert](https://en.wikipedia.org/wiki/Decision_EXpert)). See *References* below and [DEX Software](https://dex.ijs.si/) for more information.
+**DEXiWin** is a Microsoft Windows desktop program for developing and using hierarchical qualitative multi-criteria decision models according to the method DEX ([Decision EXpert](https://en.wikipedia.org/wiki/Decision_EXpert)). See *References* below and [DEX Software](https://dex.ijs.si/) for more information.
 
 DEXiWin implements a graphical user interface over the core DEXi modelling library DEXiLibrary. DEXiWin supports the following functionality:
 
