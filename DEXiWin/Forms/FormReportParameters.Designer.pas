@@ -617,7 +617,7 @@ begin
   self.PageGenerator.Location := new System.Drawing.Point(4, 22);
   self.PageGenerator.Name := 'PageGenerator';
   self.PageGenerator.Padding := new System.Windows.Forms.Padding(3);
-  self.PageGenerator.Size := new System.Drawing.Size(532, 697);
+  self.PageGenerator.Size := new System.Drawing.Size(532, 475);
   self.PageGenerator.TabIndex := 5;
   self.PageGenerator.Text := 'Parameters';
   self.PageGenerator.UseVisualStyleBackColor := true;
@@ -634,7 +634,7 @@ begin
   self.GenAttList.ShowGroups := false;
   self.GenAttList.ShowImagesOnSubItems := true;
   self.GenAttList.ShowItemToolTips := true;
-  self.GenAttList.Size := new System.Drawing.Size(526, 391);
+  self.GenAttList.Size := new System.Drawing.Size(526, 169);
   self.GenAttList.TabIndex := 20;
   self.GenAttList.UseCompatibleStateImageBehavior := false;
   self.GenAttList.View := System.Windows.Forms.View.Details;
@@ -651,7 +651,7 @@ begin
   self.PanelGenCtrl2.Controls.Add(self.GrpGenLimit);
   self.PanelGenCtrl2.Controls.Add(self.GrpGenChanging);
   self.PanelGenCtrl2.Dock := System.Windows.Forms.DockStyle.Bottom;
-  self.PanelGenCtrl2.Location := new System.Drawing.Point(3, 556);
+  self.PanelGenCtrl2.Location := new System.Drawing.Point(3, 334);
   self.PanelGenCtrl2.Name := 'PanelGenCtrl2';
   self.PanelGenCtrl2.Size := new System.Drawing.Size(526, 138);
   self.PanelGenCtrl2.TabIndex := 30;
@@ -820,7 +820,7 @@ begin
   self.PageAttributes.Location := new System.Drawing.Point(4, 22);
   self.PageAttributes.Name := 'PageAttributes';
   self.PageAttributes.Padding := new System.Windows.Forms.Padding(3);
-  self.PageAttributes.Size := new System.Drawing.Size(532, 697);
+  self.PageAttributes.Size := new System.Drawing.Size(532, 475);
   self.PageAttributes.TabIndex := 4;
   self.PageAttributes.Text := 'Attributes';
   self.PageAttributes.UseVisualStyleBackColor := true;
@@ -837,7 +837,7 @@ begin
   self.AttList.ShowGroups := false;
   self.AttList.ShowImagesOnSubItems := true;
   self.AttList.ShowItemToolTips := true;
-  self.AttList.Size := new System.Drawing.Size(526, 643);
+  self.AttList.Size := new System.Drawing.Size(526, 421);
   self.AttList.TabIndex := 10;
   self.AttList.UseCompatibleStateImageBehavior := false;
   self.AttList.View := System.Windows.Forms.View.Details;
@@ -887,7 +887,7 @@ begin
   self.PageAlternatives.Location := new System.Drawing.Point(4, 22);
   self.PageAlternatives.Name := 'PageAlternatives';
   self.PageAlternatives.Padding := new System.Windows.Forms.Padding(3);
-  self.PageAlternatives.Size := new System.Drawing.Size(532, 697);
+  self.PageAlternatives.Size := new System.Drawing.Size(532, 475);
   self.PageAlternatives.TabIndex := 2;
   self.PageAlternatives.Text := 'Alternatives';
   self.PageAlternatives.UseVisualStyleBackColor := true;
@@ -904,7 +904,7 @@ begin
   self.AltList.Name := 'AltList';
   self.AltList.ShowGroups := false;
   self.AltList.ShowItemToolTips := true;
-  self.AltList.Size := new System.Drawing.Size(526, 643);
+  self.AltList.Size := new System.Drawing.Size(526, 421);
   self.AltList.TabIndex := 10;
   self.AltList.UseCompatibleStateImageBehavior := false;
   self.AltList.View := System.Windows.Forms.View.Details;
@@ -912,7 +912,9 @@ begin
   self.AltList.ItemChecked += new System.Windows.Forms.ItemCheckedEventHandler(self.AltList_ItemChecked);
   self.ColAlternative.AspectName := 'Name';
   self.ColAlternative.CellEditUseWholeCell := true;
-  self.ColAlternative.MaximumWidth := 100;
+  self.ColAlternative.FillsFreeSpace := true;
+  self.ColAlternative.IsEditable := false;
+  self.ColAlternative.MaximumWidth := 1000;
   self.ColAlternative.ToolTipText := 'Description';
   self.PanelAltCtrl.Controls.Add(self.BtnUncheckAllAlt);
   self.PanelAltCtrl.Controls.Add(self.BtnCheckAllAlt);
@@ -948,7 +950,7 @@ begin
   self.PageFormat.Location := new System.Drawing.Point(4, 22);
   self.PageFormat.Name := 'PageFormat';
   self.PageFormat.Padding := new System.Windows.Forms.Padding(3);
-  self.PageFormat.Size := new System.Drawing.Size(532, 697);
+  self.PageFormat.Size := new System.Drawing.Size(532, 475);
   self.PageFormat.TabIndex := 1;
   self.PageFormat.Text := 'Format';
   self.PageFormat.UseVisualStyleBackColor := true;
@@ -956,7 +958,7 @@ begin
   self.CtrlFormat.Dock := System.Windows.Forms.DockStyle.Fill;
   self.CtrlFormat.Location := new System.Drawing.Point(3, 3);
   self.CtrlFormat.Name := 'CtrlFormat';
-  self.CtrlFormat.Size := new System.Drawing.Size(526, 691);
+  self.CtrlFormat.Size := new System.Drawing.Size(526, 469);
   self.CtrlFormat.TabIndex := 0;
   self.PanelCtrl.Controls.Add(self.BtnCancel);
   self.PanelCtrl.Controls.Add(self.BtnOK);
